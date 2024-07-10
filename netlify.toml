@@ -1,5 +1,5 @@
 [build]
-  publish = "static" # Directory where your static files are located
+  publish = "build" # Directory where your static files are located
   command = "" # Leave empty if no build command is needed
 
 [[redirects]]
