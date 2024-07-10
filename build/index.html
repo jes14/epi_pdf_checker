@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Upload and Search</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload a PDF File</h1>
+        
+        <div id="drop-area">
+            <h3>Drag & Drop your PDF file here or click to select</h3>
+            <form action="/" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" accept=".pdf" style="display: none;" id="file-input">
+                <button type="button" onclick="document.getElementById('file-input').click();">Choose File</button>
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+
+        
+    </div>
+</body>
+</html>
