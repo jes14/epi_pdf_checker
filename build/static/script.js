@@ -22,7 +22,7 @@ function handleFiles(files) {
 }
 
 function uploadFile(file) {
-    let url = '/upload';
+    let url = '/';
     let formData = new FormData();
     formData.append('pdf', file);
 

@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 import os
 from PyPDF2 import PdfReader
 import re
-# test
+
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['ALLOWED_EXTENSIONS'] = {'pdf'}
