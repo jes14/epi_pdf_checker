@@ -1,0 +1,8 @@
+[build]
+  publish = "static" # Directory where your static files are located
+  command = "" # Leave empty if no build command is needed
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
