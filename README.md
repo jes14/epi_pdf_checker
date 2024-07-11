@@ -2,7 +2,7 @@
 
 ## Overview
 
-The PDF Checker project converts PDF files to text and searches for specific keywords within the converted text. This repository provides the necessary tools and instructions to set up and run the application locally.
+The Epi PDF Checker project converts PDF files to text and searches for specific keywords within the converted text. This repository provides the necessary tools and instructions to set up and run the application locally.
 
 ## Installation Instructions
 
@@ -16,7 +16,7 @@ To set up the Epi PDF Checker project, follow these steps:
 Clone the repository using the following command:
 
 ```sh
-git clone https://github.com/test/pdf_checker
+git clone https://github.com/jes14/epi_pdf_checker
 ```
 
 ### Create a Virtual Environment
@@ -24,7 +24,7 @@ git clone https://github.com/test/pdf_checker
 Navigate to the project directory and create a new virtual environment:
 
 ```sh
-cd pdf_checker
+cd epi_pdf_checker
 python3 -m venv venv
 ```
 
