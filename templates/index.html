@@ -10,8 +10,10 @@
     <div class="container">
         <h1>Upload a PDF File</h1>
         <form action="/" method="post" enctype="multipart/form-data">
-            <input type="file" name="file" accept=".pdf" id="file-input">
-            <button type="submit">Upload</button>
+            <input type="file" name="file">
+            <input type="submit" value="Upload">
+            <!-- <input type="file" name="file" accept=".pdf" id="file-input">
+            <button type="submit">Upload</button> -->
         </form>
         {% if text %}
         <div>
