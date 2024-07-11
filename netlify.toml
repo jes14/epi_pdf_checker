@@ -4,5 +4,5 @@
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "https://epi-pdf-checker.netlify.app/"
   status = 200
