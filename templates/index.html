@@ -1,17 +1,31 @@
-<html lang='en'>
-	<head>
-		<title>Integer To Binary</title>
-		<link rel='stylesheet' href="{{url_for('static',filename='./style.css')}}"/>
-	</head>
-	<body>
-		<h1><u>Integer to Binary</u></h1>
-		<form action='/output' method="post">
-			<label for="variable">Input a number between 0-255</label>
-			<input type="text" name="variable" placeholder="0" required>
-		</form>
-		<br>
-		{%if output%}
-		<p>Output:{{output}}</p>
-		{%endif%}
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Upload and Search</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload a PDF File</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <input type="submit" value="Upload">
+            <!-- <input type="file" name="file" accept=".pdf" id="file-input">
+            <button type="submit">Upload</button> -->
+        </form>
+        {% if text %}
+        <div>
+            <h2>Uploaded PDF Text</h2>
+            <textarea rows="20" readonly>{{ text }}</textarea>
+            <h2>Search Keywords</h2>
+            <form action="/search" method="post">
+                <input type="hidden" name="text" value="{{ text }}">
+                <button type="submit">Search Keywords</button>
+            </form>
+        </div>
+        {% endif %}
+    </div>
+</body>
 </html>
