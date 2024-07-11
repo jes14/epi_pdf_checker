@@ -5,26 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDF Upload and Search</title>
     <link rel="stylesheet" href="static/styles.css">
+    <script src="static/scripts.js" defer></script>
 </head>
 <body>
     <div class="container">
-        <h1>Upload a PDF File</h1>
-        <form action="/" method="post" enctype="multipart/form-data">
-            <input type="file" name="file">
-            <input type="submit" value="Upload">
-            <!-- <input type="file" name="file" accept=".pdf" id="file-input">
-            <button type="submit">Upload</button> -->
-        </form>
         {% if text %}
         <div>
             <h2>Uploaded PDF Text</h2>
-            <textarea rows="20" readonly>{{ text }}</textarea>
-            <h2>Search Keywords</h2>
             <form action="/search" method="post">
                 <input type="hidden" name="text" value="{{ text }}">
                 <button type="submit">Search Keywords</button>
             </form>
+            <textarea rows="20" readonly>{{ text }}</textarea>
+            <!-- <h2>Search Keywords</h2> -->
+
         </div>
+        {% else %}
+        <h1>Upload a PDF File</h1>
+        <form action="/" method="post" enctype="multipart/form-data" id="upload-form">
+            <div id="drop-area">
+                <input type="file" name="file" accept=".pdf" style="display: none;" id="file-input" onchange="updateFileName()">
+                <div class="file-selection">
+                <button type="button" onclick="document.getElementById('file-input').click();">Choose File</button>
+                <span id="file-name">No file chosen</span>
+                </div>
+            </div>
+            <button type="submit">Upload</button>
+        </form>
         {% endif %}
     </div>
 </body>
