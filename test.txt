@@ -1,0 +1,20 @@
+"Date: 2023-07-10", "Email: example@example.com", "Phone: 123-456-7890", "The data
+was available on figshare and deposited in GEO.", "Data availability is crucial. The dataset
+(S1) is accessible.", "The supplementary table S1 is included in the supplementary
+materials.", "No raw data was provided, but the source code is available on GitHub.", "File
+formats: csv, zip, xls.", "For more information, contact us at info@example.com.", "Research
+domain criteria are available upon request."
+
+GitHub Repository Details The research data is hosted on GitHub:
+https://github.com/research-data/example-repo Additional information about the project can
+be found on our GitHub page. Data Availability Statement The data associated with this
+study are available on Dryad and Zenodo. Full datasets can be accessed upon request from
+the corresponding author. Please refer to the following repositories for more information: -
+Dryad: https://dryad.org/resource/doi:10.5061/dryad.12345 - Zenodo:
+https://zenodo.org/record/123456 Supplementary Information Supplementary data files are
+available in the following formats: CSV, XLSX, and ZIP. Supplementary Table S1 provides
+detailed information on the data structure.
+
+ee
+
+

@@ -1,22 +1,16 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>PDF CONVERTER</title>
-    </head>
-    <body>
-        <h1>
-    CONVERT PDF TO TEXT
-</h1>
+{% extends "layout.html" %}
 
-        <p>
+{% block heading %}
+    CONVERT PDF TO TEXT
+{% endblock %}
+
+{% block body %}
 
 <strong>1)</strong> Select a PDF file to be converted. <strong>2)</strong> Input a name for the (to be created) text file. <strong>3)</strong> Click "Convert".
-  <form id=upload_form action='/convert' method=POST enctype=multipart/form-data>
+  <form id=upload_form action='{{ url_for("convert") }}' method=POST enctype=multipart/form-data>
       <input type=file name=file>
       <input name="txtname" placeholder='Input Name For Text File' style='width: 150px' required minlength='2'>
       <input type=submit value=CONVERT>
   </form>
 
-</p>
-    </body>
-</html>
+{% endblock %}
