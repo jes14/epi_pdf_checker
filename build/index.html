@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>PDF CONVERTER</title>
-    </head>
-    <body>
-        <h1>
-    CONVERT PDF TO TEXT
-</h1>
-
-        <p>
-
-<strong>1)</strong> Select a PDF file to be converted. <strong>2)</strong> Input a name for the (to be created) text file. <strong>3)</strong> Click "Convert".
-  <form id=upload_form action='/convert' method=POST enctype=multipart/form-data>
-      <input type=file name=file>
-      <input name="txtname" placeholder='Input Name For Text File' style='width: 150px' required minlength='2'>
-      <input type=submit value=CONVERT>
-  </form>
-
-</p>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Upload and Search</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload a PDF File</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <input type="submit" value="Upload">
+            <!-- <input type="file" name="file" accept=".pdf" id="file-input">
+            <button type="submit">Upload</button> -->
+        </form>
+        {% if text %}
+        <div>
+            <h2>Uploaded PDF Text</h2>
+            <textarea rows="20" readonly>{{ text }}</textarea>
+            <h2>Search Keywords</h2>
+            <form action="/search" method="post">
+                <input type="hidden" name="text" value="{{ text }}">
+                <button type="submit">Search Keywords</button>
+            </form>
+        </div>
+        {% endif %}
+    </div>
+</body>
 </html>

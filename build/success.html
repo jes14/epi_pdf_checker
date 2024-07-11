@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    SUCCESS!
+{% endblock %}
+
+{% block body %}
+    Your PDF has been converted to a text file.
+    <br>
+    </br>
+    Can be found at: <strong>{{ location }}</strong>
+    <br>
+    </br>
+    <strong>Output:</strong>
+    {{ output }}
+    <br>
+    </br>
+    <a href="{{ url_for('index') }}">
+        Convert Another PDF
+    </a>
+{% endblock %}

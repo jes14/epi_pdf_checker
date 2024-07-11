@@ -1,8 +1,0 @@
-[build]
-  publish = "build" # Directory where your static files are located
-  command = "" # Leave empty if no build command is needed
-
-[[redirects]]
-  from = "/*"
-  to = "https://epi-pdf-checker.netlify.app/"
-  status = 200

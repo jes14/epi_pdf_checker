@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    OOPS!
+{% endblock %}
+
+{% block body %}
+
+  There was an error. Was the file selected a PDF?
+  <br>
+  </br>
+  <a href="{{ url_for('index') }}">
+      Go Back
+  </a>
+
+{% endblock %}
