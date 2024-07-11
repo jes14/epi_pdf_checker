@@ -15,17 +15,7 @@
             <!-- <input type="file" name="file" accept=".pdf" id="file-input">
             <button type="submit">Upload</button> -->
         </form>
-        {% if text %}
-        <div>
-            <h2>Uploaded PDF Text</h2>
-            <textarea rows="20" readonly>{{ text }}</textarea>
-            <h2>Search Keywords</h2>
-            <form action="/search" method="post">
-                <input type="hidden" name="text" value="{{ text }}">
-                <button type="submit">Search Keywords</button>
-            </form>
-        </div>
-        {% endif %}
+        
     </div>
 </body>
 </html>
