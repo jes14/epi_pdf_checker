@@ -9,7 +9,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>Upload a PDF File</h1>
+        
+        <h1>Convert PDF to Text</h1>
         <form action="/" method="post" enctype="multipart/form-data" id="upload-form">
             <div id="drop-area">
                 <input type="file" name="file" accept=".pdf" style="display: none;" id="file-input" onchange="updateFileName()">
@@ -18,7 +19,7 @@
                 <span id="file-name">No file chosen</span>
                 </div>
             </div>
-            <button type="submit">Upload</button>
+            <button type="submit">Convert</button>
         </form>
         
     </div>
