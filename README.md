@@ -44,7 +44,6 @@ Install the required Python packages listed in `requirements.txt`:
 (venv) $ pip install -r requirements.txt
 ```
 
-## Running the Development Server
 
 ### Start the Development Server
 
@@ -57,6 +56,12 @@ Run the development server to serve the Flask application:
 ### Access the Application
 
 Open your preferred web browser and navigate to `http://127.0.0.1:5000/` to view the application.
+
+## Build the application
+
+```sh
+(venv) $ python freeze.py
+```
 
 ## License
 
