@@ -9,7 +9,9 @@
 <body>
     <div class="container">
         <h1>Open data identification keywords</h1>
-        <a class="back-link" href="{{ url_for('index') }}">Back to Upload</a>
+        <a href="{{ url_for('index') }}">
+            <button type="button">Back to Upload</button>
+        </a>        
         {% if results %}
         <div class="results">
             <ul>
