@@ -66,6 +66,11 @@ Open your preferred web browser and navigate to `http://127.0.0.1:5000/` to view
 (venv) $ python freeze.py
 ```
 
+## Create requirement file
+```sh
+pip freeze > requirements.txt
+```
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
