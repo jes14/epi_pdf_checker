@@ -12,6 +12,7 @@ body {
 h1 {
     color: #333;
     margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 #drop-area {
@@ -32,24 +33,7 @@ h1 {
     font-size: 16px;
     color: #666;
 }
-/* 
-button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #486856;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
 
-button:hover {
-    background-color: #3a4c40;
-} */
-
-/* CSS */
 button {
   background-color: #FFFFFF;
   border: 1px solid #222222;
@@ -62,7 +46,7 @@ button {
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
-  margin: 0;
+  margin: 10px;
   outline: none;
   padding: 13px 23px;
   position: relative;
@@ -104,19 +88,12 @@ textarea {
     margin: 20px;
 }
 
-
-/* Styles for the search results page */
 .container {
     text-align: center;
     width: 80%;
     max-width: 800px;
     margin: auto;
 }
-
-/* h1 {
-    color: #333;
-    margin-bottom: 20px;
-} */
 
 .back-link {
     display: inline-block;

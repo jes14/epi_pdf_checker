@@ -8,12 +8,12 @@
 </head>
 <body>
     <div class="container">
-        <h1>Open data identification keywords</h1>
         <a href="{{ url_for('index') }}">
             <button type="button">Back to Upload</button>
         </a>        
         {% if results %}
         <div class="results">
+            <h1>Open data identification keywords</h1>
             <ul>
                 {% for key, value in results.items() %}
                 <li><strong>{{ key }}:</strong> {{ value | join(', ') }}</li>
