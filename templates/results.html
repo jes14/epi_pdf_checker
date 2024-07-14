@@ -19,6 +19,12 @@
                 <li><strong>{{ key }}:</strong> {{ value | join(', ') }}</li>
                 {% endfor %}
             </ul>
+            <h1>NLP Extracted Keywords</h1>
+            <ul>
+                {% for keyword in nlp_keywords %}
+                    <li>{{ keyword }}</li>
+                {% endfor %}
+            </ul>
         </div>
         {% else %}
         <p class="no-results">No keywords found.</p>
