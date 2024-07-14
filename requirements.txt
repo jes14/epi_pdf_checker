@@ -81,7 +81,7 @@ psutil==6.0.0
 pycountry==24.6.1
 pycparser==2.22
 pycryptodome==3.7.3
-pydantic==4.12.2
+pydantic==2.8.2
 pydantic_core==2.20.1
 pymongo==4.8.0
 PyMuPDF==1.24.7
