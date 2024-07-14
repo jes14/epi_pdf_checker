@@ -68,7 +68,7 @@ Open your preferred web browser and navigate to `http://127.0.0.1:5000/` to view
 
 ## Create requirement file
 ```sh
-pip freeze > requirements.txt
+(venv) $ pip freeze > requirements.txt
 ```
 
 ## License
