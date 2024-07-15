@@ -15,6 +15,25 @@ h1 {
     margin-top: 50px;
 }
 
+#drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#drop-area.highlight {
+    background-color: #e0f7fa;
+}
+
+#drop-area h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+}
+
 button {
   background-color: #FFFFFF;
   border: 1px solid #222222;
@@ -74,6 +93,23 @@ textarea {
     width: 80%;
     max-width: 800px;
     margin: auto;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #486856;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: #3a4c40;
 }
 
 .results {
