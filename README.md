@@ -57,6 +57,12 @@ Run the development server to serve the Flask application:
 (venv) $ flask --app app --debug run
 ```
 
+or 
+
+```sh
+(venv) $ python app.py
+```
+
 ### Access the Application
 
 Open your preferred web browser and navigate to `http://127.0.0.1:5000/` to view the application.
