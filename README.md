@@ -2,10 +2,10 @@
 
 ## Overview
 
-The Epi PDF Checker project converts PDF files to text and searches for specific keywords or extracts keywords within the converted text. This repository provides the necessary tools and instructions to set up and run the application.
+The Epi PDF Checker project converts PDF files to text. Then, it searches for specific keywords or extracts keywords within the converted text. This repository provides the necessary tools and instructions to set up and run the application.
 
 ## Website
-https://epi-pdf-checker.onrender.com/
+[Epi PDF Checker](https://epi-pdf-checker.onrender.com/)
 (Loading may take some time when you open the browser)
 
 ## Installation Instructions
